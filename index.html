@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BillySocial</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h2 class="logo">BillySocial</h2>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            placeholder="Search for Creators, Inspirations, and Projects"
+          />
+        </div>
+        <div class="create">
+          <label class="btn btn-primary" for="create-post">Create</label>
+          <div class="profile-picture">
+            <img class="profile-photo" src="./images/thumbnail-1.jpg" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Main -->
+    <main>
+      <div class="container">
+        <!------------ Left ------------>
+        <div class="left">
+          <a class="profile">
+            <div class="profile-photo">
+              <img src="./images/thumbnail-1.jpg" />
+            </div>
+            <div class="handle">
+              <h4>P-ROD</h4>
+              <p class="text-muted">@prod</p>
+            </div>
+          </a>
+
+          <div class="sidebar">
+            <a class="menu-item active">
+              <span><i class="fa-solid fa-house"></i></span>
+              <h3>Home</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="fa-solid fa-compass"></i></span>
+              <h3>Explore</h3>
+            </a>
+            <a class="menu-item" id="notifications">
+              <span
+                ><i class="fa-solid fa-bell"></i
+                ><small class="notification-count">6</small></span
+              >
+              <h3>Notifications</h3>
+              <div class="notifications-popup">
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/thumbnail-10.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Keke Benjamin</b> accepted your friend request
+                    <small class="text-muted">2 Days Ago</small>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="menu-item" id="messages-notifications">
+              <span
+                ><i class="fa-solid fa-envelope"></i
+                ><small class="notification-count">9+</small></span
+              >
+              <h3>Messages</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="fa-solid fa-bookmark"></i></span>
+              <h3>Bookmarks</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="fa-sharp fa-solid fa-chart-simple"></i> </span>
+              <h3>Analytics</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="fa-solid fa-palette"></i></span>
+              <h3>Theme</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="fa-solid fa-bars"></i> </span>
+              <h3>Settings</h3>
+            </a>
+          </div>
+          <!--End of Sidebar-->
+          <label class="btn btn-primary" for="create-post">Create Post</label>
+        </div>
+        <!------------ Middle ------------>
+
+        <div class="middle">
+          <!------------Stories------------>
+          <div class="stories">
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/thumbnail-13.jpg" />
+              </div>
+              <p class="name">Your Story</p>
+            </div>
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/thumbnail-14.jpg" />
+              </div>
+              <p class="name">Gregg Adams</p>
+            </div>
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/thumbnail-15.jpg" />
+              </div>
+              <p class="name">Tom Moffatt</p>
+            </div>
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/thumbnail-16.jpg" />
+              </div>
+              <p class="name">Alex Restrepo</p>
+            </div>
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/thumbnail-17.jpg" />
+              </div>
+              <p class="name">Tommy Walter</p>
+            </div>
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/thumbnail-18.jpg" />
+              </div>
+              <p class="name">Chris Kornfeld</p>
+            </div>
+          </div>
+          <!------------End of Stories------------>
+          <form class="create-post">
+            <div class="profile-photo">
+              <img src="./images/thumbnail-10.jpg" />
+            </div>
+            <input
+              type="text"
+              placeholder="Whats on your mind?"
+              id="create-post"
+            />
+            <input type="submit" value="Post" class="btn btn-primary" />
+          </form>
+
+          <!----------Feeds---------->
+          <div class="feeds">
+            <!--Feed-->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/thumbnail-1.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Alex Restrepo</h3>
+                    <small>Dubai, 15 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/thumbnail-2.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa-solid fa-heart"></i></span>
+                  <span><i class="fa-solid fa-comment"></i></span>
+                  <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa-solid fa-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/thumbnail-12.jpg" /></span>
+                <span><img src="./images/thumbnail-9.jpg" /></span>
+                <span><img src="./images/thumbnail-6.jpg" /></span>
+                <p>Liked by <b>Bill Notturno</b> and <b>2,332 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>Alex Restrepo</b> Having a great time with my friends.
+                  <span class="hash-tag">#chillen</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 277 comments</div>
+            </div>
+
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/thumbnail-13.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>MoffyBoi</h3>
+                    <small>Oceanside, 30 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/thumbnail-14.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa-solid fa-heart"></i></span>
+                  <span><i class="fa-solid fa-comment"></i></span>
+                  <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa-solid fa-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/thumbnail-12.jpg" /></span>
+                <span><img src="./images/thumbnail-9.jpg" /></span>
+                <span><img src="./images/thumbnail-6.jpg" /></span>
+                <p>Liked by <b>Bam Margera</b> and <b>36 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>MoffyBoi</b> Good Morning.
+                  <span class="hash-tag">#dead</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 18 comments</div>
+            </div>
+
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/thumbnail-6.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Gregg Adams</h3>
+                    <small>Lybrook, 58 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/thumbnail-6.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa-solid fa-heart"></i></span>
+                  <span><i class="fa-solid fa-comment"></i></span>
+                  <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa-solid fa-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/thumbnail-12.jpg" /></span>
+                <span><img src="./images/thumbnail-9.jpg" /></span>
+                <span><img src="./images/thumbnail-6.jpg" /></span>
+                <p>Liked by <b>Dingus Domingus</b> and <b>55 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>Gregg Adams</b> Another Day, another dollar in the swear
+                  jar.
+                  <span class="hash-tag">#stop</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 52 comments</div>
+            </div>
+
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/thumbnail-8.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Titooo</h3>
+                    <small>Kitchenette, 15 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/thumbnail-8.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa-solid fa-heart"></i></span>
+                  <span><i class="fa-solid fa-comment"></i></span>
+                  <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa-solid fa-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/thumbnail-12.jpg" /></span>
+                <span><img src="./images/thumbnail-9.jpg" /></span>
+                <span><img src="./images/thumbnail-6.jpg" /></span>
+                <p>Liked by <b>Kornfeld</b> and <b>6 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>Titooo</b> You wanna grab some pea soup or somethin?
+                  <span class="hash-tag">#chillen</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 3 comments</div>
+            </div>
+
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/thumbnail-11.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>LeoInTheHaus</h3>
+                    <small>Brooklyn, 6 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/thumbnail-11.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa-solid fa-heart"></i></span>
+                  <span><i class="fa-solid fa-comment"></i></span>
+                  <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa-solid fa-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/thumbnail-12.jpg" /></span>
+                <span><img src="./images/thumbnail-9.jpg" /></span>
+                <span><img src="./images/thumbnail-6.jpg" /></span>
+                <p>Liked by <b>Sergio</b> and <b>1,992 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>LeoInTheHaus</b> You want a miller ?
+                  <span class="hash-tag">#hello</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 277 comments</div>
+            </div>
+
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/thumbnail-18.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Billy N</h3>
+                    <small>Pluto, New York, 60 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/thumbnail-18.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa-solid fa-heart"></i></span>
+                  <span><i class="fa-solid fa-comment"></i></span>
+                  <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa-solid fa-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/thumbnail-12.jpg" /></span>
+                <span><img src="./images/thumbnail-9.jpg" /></span>
+                <span><img src="./images/thumbnail-6.jpg" /></span>
+                <p>Liked by <b>longIslandWiseGuys</b> and <b>33 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>Billy N</b> Relaxing with Dino Spumoni.
+                  <span class="hash-tag">#lapdog</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 33 comments</div>
+            </div>
+
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/thumbnail-16.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>LellyBoi</h3>
+                    <small>Sunrise Highway, 15 minutes ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./images/thumbnail-16.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="fa-solid fa-heart"></i></span>
+                  <span><i class="fa-solid fa-comment"></i></span>
+                  <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="bookmark">
+                  <span><i class="fa-solid fa-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="./images/thumbnail-12.jpg" /></span>
+                <span><img src="./images/thumbnail-9.jpg" /></span>
+                <span><img src="./images/thumbnail-6.jpg" /></span>
+                <p>Liked by <b>Peter Parker</b> and <b>232 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>LellyBoi</b> I've had the time of my life, and i owe it all
+                  to you.
+                  <span class="hash-tag">#chillen</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 67 comments</div>
+            </div>
+          </div>
+        </div>
+        <!------------ Right ------------>
+
+        <div class="right">
+          <div class="messages">
+            <div class="heading">
+              <h4>Messages</h4>
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="search"
+                placeholder="Search Messages"
+                id="message-search"
+              />
+            </div>
+            <div class="category">
+              <h6 class="active">Primary</h6>
+              <h6>General</h6>
+              <h6 class="message-requests">Requests(2)</h6>
+            </div>
+            <div class="message">
+              <div class="profile-photo">
+                <img src="/images/thumbnail-17.jpg" />
+              </div>
+              <div class="message-body">
+                <h5>Bill N</h5>
+                <p class="text-bold">2 new messages</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img src="/images/thumbnail-3.jpg" />
+              </div>
+              <div class="message-body">
+                <h5>Ray</h5>
+                <p class="text-bold">6 new messages</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img src="/images/thumbnail-16.jpg" />
+              </div>
+              <div class="message-body">
+                <h5>Lelly</h5>
+                <p class="text-bold">1 new message</p>
+              </div>
+            </div>
+          </div>
+          <div class="friend-requests">
+            <h4>Requests</h4>
+            <div class="request">
+              <div class="info">
+                <div class="profile-photo">
+                  <img src="./images/thumbnail-14.jpg" />
+                </div>
+                <div>
+                  <h5>MoffyBoi</h5>
+                  <p class="text-muted">5 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <div class="request">
+              <div class="info">
+                <div class="profile-photo">
+                  <img src="./images/thumbnail-12.jpg" />
+                </div>
+                <div>
+                  <h5>Leo</h5>
+                  <p class="text-muted">3 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Theme-->
+    <div class="customize-theme">
+      <div class="card">
+        <h2>Customize Your View</h2>
+        <p>Manage your font size, color, and background</p>
+        <!--Font size-->
+        <div class="font-size">
+          <h4>Font Size</h4>
+          <div>
+            <div class="choose-size">
+              <span class="font-size-1"></span>
+              <span class="font-size-2 active"></span>
+              <span class="font-size-3"></span>
+              <span class="font-size-4"></span>
+              <span class="font-size-5"></span>
+            </div>
+            <h3>Aa</h3>
+          </div>
+        </div>
+
+        <!--Primary Colors-->
+        <div class="color">
+          <h4>Color</h4>
+          <div class="choose-color">
+            <span class="color-1 active"></span>
+            <span class="color-2"></span>
+            <span class="color-3"></span>
+            <span class="color-4"></span>
+            <span class="color-5-"></span>
+          </div>
+        </div>
+
+        <!--Background Colors-->
+        <div class="background">
+          <h4>Background</h4>
+          <div class="choose-bg">
+            <div class="bg-1 active">
+              <span></span>
+              <h5 for="bg-1">Light</h5>
+            </div>
+            <div class="bg-2">
+              <span></span>
+              <h5 for="bg-2">Dim</h5>
+            </div>
+            <div class="bg-3">
+              <span></span>
+              <h5 for="bg-3">Lights Out</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
